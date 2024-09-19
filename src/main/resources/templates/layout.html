@@ -16,22 +16,15 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" th:href="@{/}">Home</a></li>
         <li class="nav-item"><a class="nav-link" th:href="@{/clubs}">Find Clubs</a></li>
-        <li class="nav-item"><a class="nav-link" th:href="@{/clubs/events}">Find Events</a></li>
+        <li class="nav-item"><a class="nav-link" th:href="@{/events}">Find Events</a></li>
         <li class="nav-item"><a class="nav-link" href="pricing.html">Directory</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-            <li><a class="dropdown-item" href="blog-home.html">Register</a></li>
-            <li><a class="dropdown-item" href="blog-post.html">Log Out</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+          <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
             <li><a class="dropdown-item" th:href="@{clubs/new}">Create 3x3 Club</a></li>
-            <li><a class="dropdown-item" href="portfolio-overview.html">Sign in</a></li>
-            <li><a class="dropdown-item" href="portfolio-overview.html">Register</a></li>
-            <li><a class="dropdown-item" href="portfolio-item.html">Log out</a></li>
+            <li><a class="dropdown-item" th:href="@{/login}">Log in</a></li>
+            <li><a class="dropdown-item" th:href="@{/register}">Register</a></li>
+            <li><a class="dropdown-item" th:href="@{/logout}">Log out</a></li>
 
           </ul>
         </li>

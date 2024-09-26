@@ -10,7 +10,7 @@
 
     <section layout:fragment="body" class="py-5">
         <div class="container">
-            <form role="form" method="post" th:action="@{/events/{clubId}/new(clubId=${clubId})}" th:object="${event}">
+            <form role="form" method="post" th:action="@{/clubs/{clubId}/events/new(clubId=${clubId})}" th:object="${event}">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="name">Name</label>
